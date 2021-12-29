@@ -11,6 +11,7 @@
             height: 100px;
             justify-content: space-between;
             background-color: #1F2937;
+            flex-wrap: nowrap;
         }
         .header {
             color: #E5E7EB;
@@ -21,22 +22,41 @@
             margin-right: 100px;
             font: bold;
         }
+        .divhalf {
+            display: flex;
+            flex-wrap: nowrap;
+        }
         .divtwo {
             display:flex;
-            justify-content: center;
-            align-content: center;
+            justify-content: space-around;
+            align-items: center;
             background-color: #1F2937;
             height: 300px;
+            flex-wrap: nowrap;
         }
         .para {
             display:flex;
             flex-direction: column;
             height: 200px;
+            align-align: center;
+        }
+        .para .lorem {
+            align-self: center;
+            margin-bottom: 30px;
+            font: 20px;
+        }
+        .awesome {
+            color: #F9FAF8;
+            font-size:48px;
+        }
+        .lorem {
+            color:#E5E7EB;
+            font: 18px;
         }
         .image {
-            height: 100px;
-            width: 200px;
-            flex: 0 1 auto;
+            height: 250px;
+            width: 370px;
+            flex: 0 0 auto;
         }
         .divthree {
             display: flex;
@@ -45,15 +65,49 @@
         .imgtwo {
             height: 250px;
             width: 200px;
+            border-radius: 15px;
         }
         .p {
             text-align: center;
         }
         .signup {
             background-color: #3882F6;
-            border-radius: 25px;
+            border-radius: 15px;
             color: white;
+            font-size: 20px;
+            padding: 3px 5px 3px 5px;
+            flex: 0 0 auto;
         }
+        .divquote {
+            display: flex;
+            flex-direction: column;
+            font: 36px italic;
+            color: #1F2937;
+            background-color: #E5E7EB;
+            flex-wrap: nowrap;
+            border-radius: 15px;
+        }
+        .divefive {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .divsix {
+            color: white;
+            background-color: #3882F6;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 15px;
+        }
+        .divseven {
+            font: 36px;
+
+        }
+        .signup.here {
+            align-self: flex-end;
+        }
+
 
     </style>
 </head>
@@ -61,18 +115,18 @@
 <body>
     <div class="div">
         <h2 class="header logo">Header Logo</h2>
-        <div>
+        <div class="divhalf">
             <h3 class="header link one">header link one</h3>
             <h3 class="header link two">header link two</h3>
             <h3 class="header link three">header link three</h3>
         </div>
     </div>
     <div class="divtwo">
-        <ul class="para">
-            <li><h1>This Website is awesome!</h1></li>
-            <li><p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua.</p></li>
-            <li><button class="signup">Sign up</button></li>
-        </p>
+        <div class="para">
+            <h1 class="awesome">This Website is awesome!</h1>
+            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="signup">Sign up</button>
+        </div>
         <img class="image" src="https://images.unsplash.com/photo-1640690640894-21c52f69ca7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="Make a wish">
     </div>
     <h2 style="text-align: center; margin-bottom: 30px;">Some random Information.</h2>
@@ -88,13 +142,15 @@
         <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
         <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
     </div>
-    <div class="divfour">
-        <p>"Do you wanna be a [BIG SHOT]?<br> Because it's time to be a [BIG SHOT]!<br>         -SpamtonGSpamton</p>
+    <div class="divquote">
+        <p>"Do you wanna be a [BIG SHOT]?<br> Because it's time to be a [BIG SHOT]!"</p><p>         -SpamtonGSpamton</p>
     </div>
-    <div>
-        <div>
-            <div>Call to Action! It's time!</div>
+    <div class="divfive">
+        <div class="divsix">
+            <div class="divseven">Call to Action! It's time!</div>
             <p> Sign up for our product by clicking that button over there!</p>
+            <button class="signup here">Sign up</button>
+        </div>
     </div>
 </body>
 </html>
