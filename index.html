@@ -3,11 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Project-LandingPage</title>
+    <style>
+        .div {
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+            background-color: #1F2937;
+        }
+        .header {
+            color: #E5E7EB;
+            margin: 20px;
+        }
+        .header.logo {
+            margin-left: 100px;
+            margin-right: 100px;
+            font: bold;
+        }
+        .divtwo {
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            background-color: #1F2937;
+            height: 300px;
+        }
+        .para {
+            display:flex;
+            flex-direction: column;
+            height: 200px;
+        }
+        .image {
+            height: 100px;
+            width: 200px;
+            flex: 0 1 auto;
+        }
+        .divthree {
+            display: flex;
+            justify-content: space-around;
+        }
+        .imgtwo {
+            height: 250px;
+            width: 200px;
+        }
+        .p {
+            text-align: center;
+        }
+        .signup {
+            background-color: #3882F6;
+            border-radius: 25px;
+            color: white;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>Homepage</h1>
-    <a href="./pages/about.html"><button style="background-image: url(./images/dog.jpg); border-radius: 25px; height: 500px; width: 500px;" ></button></a>
+    <div class="div">
+        <h2 class="header logo">Header Logo</h2>
+        <div>
+            <h3 class="header link one">header link one</h3>
+            <h3 class="header link two">header link two</h3>
+            <h3 class="header link three">header link three</h3>
+        </div>
+    </div>
+    <div class="divtwo">
+        <ul class="para">
+            <li><h1>This Website is awesome!</h1></li>
+            <li><p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua.</p></li>
+            <li><button class="signup">Sign up</button></li>
+        </p>
+        <img class="image" src="https://images.unsplash.com/photo-1640690640894-21c52f69ca7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="Make a wish">
+    </div>
+    <h2 style="text-align: center; margin-bottom: 30px;">Some random Information.</h2>
+    <div class="divthree">
+        <img class="imgtwo" src="https://images.unsplash.com/photo-1640765730039-77589c1b7fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+        <img class="imgtwo" src="https://images.unsplash.com/photo-1640765730039-77589c1b7fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+        <img class="imgtwo" src="https://images.unsplash.com/photo-1640765730039-77589c1b7fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+        <img class="imgtwo" src="https://images.unsplash.com/photo-1640765730039-77589c1b7fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+    </div>
+    <div class="divthree">
+        <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
+        <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
+        <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
+        <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
+    </div>
+    <div class="divfour">
+        <p>"Do you wanna be a [BIG SHOT]?<br> Because it's time to be a [BIG SHOT]!<br>         -SpamtonGSpamton</p>
+    </div>
+    <div>
+        <div>
+            <div>Call to Action! It's time!</div>
+            <p> Sign up for our product by clicking that button over there!</p>
+    </div>
 </body>
 </html>
