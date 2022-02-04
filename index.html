@@ -6,22 +6,38 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <title>Project-LandingPage</title>
     <style>
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
         .div {
+            position: fixed;
+            top: 0px;
+            width: 100%;
             display: flex;
-            height: 100px;
+            height: 50px;
             justify-content: space-between;
-            background-color: #1F2937;
+            align-items: center;
+            background-color: #172435;
             flex-wrap: nowrap;
         }
-        .header {
-            color: #E5E7EB;
+        .header.link {
+            color: grey;
             margin: 20px;
+        }
+        a {
             text-decoration: none;
         }
+        .header.link:hover {
+            background-color: black;
+            margin: 0px;
+            padding: 10px;
+        }
         .header.logo {
+            color: #E5E7EB;
             margin-left: 100px;
             margin-right: 100px;
-            font: bold;
+            font: impact bold;
         }
         .divhalf {
             display: flex;
@@ -29,20 +45,20 @@
         }
         .divtwo {
             display:flex;
-            justify-content: space-around;
+            flex: 0 1 auto;
+            justify-content: space-evenly;
             align-items: center;
             background-color: #1F2937;
             height: 300px;
+            width: 100%;
             flex-wrap: nowrap;
+           /* padding-left: 100px;*/
         }
         .para {
-            display:flex;
-            flex-direction: column;
             height: 200px;
-            align-items: center;
+            list-style-type: none;
         }
         .para .lorem {
-            align-self: center;
             margin-bottom: 30px;
             font: 20px;
         }
@@ -57,7 +73,6 @@
         .image {
             height: 250px;
             width: 370px;
-            flex: 0 0 auto;
         }
         .divthree {
             display: flex;
@@ -71,88 +86,119 @@
         .p {
             text-align: center;
         }
-        .signup {
+        #signup {
             background-color: #3882F6;
             border-radius: 15px;
             color: white;
             font-size: 20px;
-            padding: 3px 300px 3px 300px;
-            flex: 0 0 auto;
+            padding: 3px 300px;
+        }
+        #signup:hover {
+            background-color: #184081; 
         }
         .divquote {
-            display: flex;
-            flex-direction: column;
-            font: 36px italic;
-            color: #1F2937;
+            font: 36px "light italic";
             background-color: #E5E7EB;
-            flex-wrap: nowrap;
-            border-radius: 15px;
+            border-radius: 5px;
         }
-        .divefive {
+        .divquote q {
+            position: relative;
+            left: 150px;
+        }
+        .divquote p {
+            position: relative;
+            left: 620px;
+            bottom: 20px;
+            color: #1F2937;
+        }
+        .divfive {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-wrap: nowrap;
+            padding-bottom: 20px;
         }
         .divsix {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+            height: 50px;
             color: white;
             background-color: #3882F6;
-            align-items: center;
-            justify-content: space-around;
-            border-radius: 15px;
+            border-radius: 5px;
         }
         .divseven {
-            font: 36px;
-
+            list-style-type: none;
         }
-        .signup.here {
-            align-self: center;
+        .signup {
+            background-color: #3882F6;
+            border-radius: 15px;
+            color: white;
+            font-size: 1em;
+            padding: 5px 50px;
+        }
+        .signup:hover {
+            background-color: #184081;
+        }
+        footer {
+            background-color: #1F2937;
+            color: white;
+            text-align: center;
+            padding: 10px 100px;
         }
 
 
     </style>
 </head>
-
 <body>
     <div class="div">
         <h2 class="header logo">Header Logo</h2>
         <div class="divhalf">
-            <a href="#"><h3 class="header link one">header link one</h3></a>
-            <a href="#"><h3 class="header link two">header link two</h3></a>
-            <a href="#"><h3 class="header link three">header link three</h3></a>
+            <a class="a" href="#"><h3 class="header link one">header link one</h3></a>
+            <a class="a" href="#"><h3 class="header link two">header link two</h3></a>
+            <a class="a" href="#"><h3 class="header link three">header link three</h3></a>
         </div>
     </div>
     <div class="divtwo">
-        <div class="para">
-            <h1 class="awesome">This Website is awesome!</h1>
-            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="signup.html"><button class="signup">Sign up</button></a>
+        <ul class="para">
+            <li><h1 class="awesome">This Website is awesome!</h1></li>
+            <li><p class="lorem">Sign up to our amazing service and <br>enjoy the many benefits which come with a club member ship</p></li>
+            <li><a href="#"><button id="signup">Sign up</button></a></li>
+        </ul>
+        <img class="image" src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="kittens">
+    </div>
+    <h2 style="text-align: center; margin-bottom: 30px;">Enjoy some cat pictures</h2>
+    <div class="divthree">
+        <div><img class="imgtwo" src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="a cat">
+        <p class="p">a cat sleeping</p>
+    </div>
+        <div>
+            <img class="imgtwo" src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="another cat">
+            <p class="p">a cat hunting,<br> very fierce and dramatic</p>
         </div>
-        <img class="image" src="https://images.unsplash.com/photo-1640690640894-21c52f69ca7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="Make a wish">
-    </div>
-    <h2 style="text-align: center; margin-bottom: 30px;">Some random Information.</h2>
-    <div class="divthree">
-        <img class="imgtwo" src="https://images.unsplash.com/photo-1640765730039-77589c1b7fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
-        <img class="imgtwo" src="https://images.unsplash.com/photo-1640765730039-77589c1b7fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
-        <img class="imgtwo" src="https://images.unsplash.com/photo-1640765730039-77589c1b7fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
-        <img class="imgtwo" src="https://images.unsplash.com/photo-1640765730039-77589c1b7fac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
-    </div>
-    <div class="divthree">
-        <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
-        <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
-        <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
-        <p class="p">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do</p>
-    </div>
-    <div class="divquote">
-        <p>"Do you wanna be a [BIG SHOT]?<br> Because it's time to be a [BIG SHOT]!"</p><p>         -SpamtonGSpamton</p>
+        <div>
+            <img class="imgtwo" src="https://images.unsplash.com/photo-1577023311546-cdc07a8454d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="yet another cat">
+            <p class="p">an old cat comprehending<br> the profoundaty of life</p>
+        </div>
+        <div>
+            <img class="imgtwo" src="https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="wow it is a cat">
+            <p class="p">if you stare at a cat<br> the cat will stare back</p>
+        </div>
+        </div>
+        <div class="divquote">
+            <q>I am glad I am on TV now the nation knows that I hate them</q><br>
+            <p>-Grumpy Cat</p>
     </div>
     <div class="divfive">
         <div class="divsix">
-            <div class="divseven">Call to Action! It's time!</div>
-            <p> Sign up for our product by clicking that button over there!</p>
-            <a href="signup.html"><button class="signup here">Sign up</button></a>
+            <ul class="divseven">
+                <li><b>Call to Action! It's time!</b></li>
+                <li>Sign up for our product by clicking that button over there!</li>
+            </ul>
+            <a href="#"><button class="signup here">Sign up</button></a>
         </div>
     </div>
+    <footer>Copyright © Skelektronik</footer>
 </body>
 </html>
 <!-- replace the images with cat imgages -->
