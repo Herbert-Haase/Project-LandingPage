@@ -2,6 +2,9 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+/*header + header links section*/
+
 .div {
     position: fixed;
     top: 0px;
@@ -14,18 +17,6 @@ html, body {
     flex-wrap: nowrap;
     box-shadow: 0 1px 1px;
 }
-.header.link {
-    color: grey;
-    margin: 20px;
-}
-a.a {
-    text-decoration: none;
-}
-.header.link:hover {
-    background-color: black;
-    margin: 0px;
-    padding: 10px;
-}
 .header.logo {
     color: #E5E7EB;
     margin-left: 100px;
@@ -36,6 +27,21 @@ a.a {
     display: flex;
     flex-wrap: nowrap;
 }
+a.a {
+    text-decoration: none;
+}
+.header.link {
+    color: grey;
+    margin: 20px;
+}
+.header.link:hover {
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+}
+
+/*"This website is awesome" + 1st-image section*/
+
 .divtwo {
     display:flex;
     flex: 0 1 auto;
@@ -45,7 +51,6 @@ a.a {
     height: 300px;
     width: 100%;
     flex-wrap: nowrap;
-   /* padding-left: 100px;*/
 }
 .para {
     height: 200px;
@@ -63,10 +68,23 @@ a.a {
     color:#E5E7EB;
     font: 18px;
 }
+#signup {
+    background-color: #3882F6;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    padding: 3px 300px;
+}
+#signup:hover {
+    background-color: #184081; 
+}
 .image {
     height: 250px;
     width: 370px;
 }
+
+/*cat-images section*/
+
 .divthree {
     display: flex;
     justify-content: space-around;
@@ -88,19 +106,12 @@ a.a {
         width: 250px;  
     }
 }
-.p {
+.p  {
     text-align: center;
 }
-#signup {
-    background-color: #3882F6;
-    border-radius: 15px;
-    color: white;
-    font-size: 20px;
-    padding: 3px 300px;
-}
-#signup:hover {
-    background-color: #184081; 
-}
+
+/*quote section*/
+
 .divquote {
     font: 36px "light italic";
     background-color: #E5E7EB;
@@ -116,6 +127,9 @@ a.a {
     bottom: 20px;
     color: #1F2937;
 }
+
+/*call to action section*/
+
 .divfive {
     display: flex;
     align-items: center;
@@ -146,6 +160,9 @@ a.a {
 .signup:hover {
     background-color: #184081;
 }
+
+/*footer*/
+
 footer {
     background-color: #1F2937;
     color: white;
