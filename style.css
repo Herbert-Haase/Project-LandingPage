@@ -17,27 +17,35 @@ html, body {
     flex-wrap: nowrap;
     box-shadow: 0 1px 1px;
 }
+.header {
+    color: #b4b6b9;
+    margin: 20px;
+}
 .header.logo {
     color: #E5E7EB;
     margin-left: 100px;
     margin-right: 100px;
-    font: impact bold;
+    font: bold;
+}
+.header.logo:hover {
+    text-shadow:0 0 10px #c9c9cc;
 }
 .divhalf {
     display: flex;
     flex-wrap: nowrap;
 }
-a.a {
+a {
     text-decoration: none;
 }
-.header.link {
-    color: grey;
-    margin: 20px;
-}
 .header.link:hover {
+    color: #ebedf1;
     background-color: black;
     margin: 0px;
     padding: 20px;
+    
+}
+.header.link:active {
+    box-shadow: 1px 0 white inset, -1px 0 white inset, 0 1px white inset, 0 -1px white inset;
 }
 
 /*"This website is awesome" + 1st-image section*/
